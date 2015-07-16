@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   resources :reviews
   resources :products
 
-  root 'products#index'
+root 'products#index'
 
   # get   '/login', :to => 'sessions#new', :as => :login
   # get '/auth/:provider/callback', :to => 'sessions#create'
