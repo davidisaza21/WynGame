@@ -15,9 +15,11 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
+        <td><%= image_tag product.picture %></td>
         <td><%= product.name %></td>
         <td><%= product.description %></td>
         <td><%= product.formatted_price %></td>
+        <td><%= link_to 'Buy', product.gumroad_link %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>

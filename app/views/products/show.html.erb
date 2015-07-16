@@ -1,5 +1,8 @@
-<p id="notice"><%= notice %></p>
-
+<p id="notice"><%= notice %></p>git
+<p>
+  <strong>pic</strong><br>
+  <%= image_tag @product.picture %>
+</p>
 <p>
   <strong>Name:</strong>
   <%= @product.name %>
@@ -13,6 +16,16 @@
 <p>
   <strong>Price:</strong>
   <%= @product.formatted_price %>
+</p>
+
+<p>
+  <strong>buy:</strong>
+  <%= link_to 'Buy', @product.gumroad_link %>
+</p>
+
+<p>
+  <strong>Video:</strong>
+  <%= @product.video_link.html_safe %>
 </p>
 
 <h3>Reviews</h3>

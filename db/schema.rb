@@ -11,12 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150716053100) do
+ActiveRecord::Schema.define(version: 20150716204152) do
 
-  create_table "authorizations", force: :cascade do |t|
-    t.string   "provider"
-    t.string   "uid"
-    t.integer  "user_id"
+  create_table "favorites", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -27,6 +24,9 @@ ActiveRecord::Schema.define(version: 20150716053100) do
     t.integer  "price_in_cents"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.string   "picture"
+    t.string   "video_link"
+    t.string   "gumroad_link"
   end
 
   create_table "reviews", force: :cascade do |t|
