@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th width>Name</th>
       <th>Description</th>
       <th>Price</th>
       <th colspan="3"></th>
@@ -15,7 +15,11 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
-        <td><%= image_tag product.picture %></td>
+        <td><%= image_tag product.picture, class: "hoverspan2" %>
+          <div class="hoverspan"><%= product.description %>
+          </div>
+        </td>
+        
         <td><%= product.name %></td>
         <td><%= product.description %></td>
         <td><%= product.formatted_price %></td>

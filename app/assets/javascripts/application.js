@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function() {
+	$('.hoverspan2').on('mouseover', function(e) {
+		$(this).parent().find('.hoverspan').show();
+	});
+	$('.hoverspan2').on('mouseout', function(e) {
+		$(this).parent().find('.hoverspan').hide();
+	});
+});
