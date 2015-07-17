@@ -23,35 +23,7 @@ img {
   font: red;
 }
 
-#show, #edit, #destroy {
-  text-align: center;
-}
-.column2 {
-  align-content: center;
-  text-align: center;
-}
-
-.column3 {
-  text-align: center;
-}
-
-/*.center_column:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}*/
-
-#game_pic {
-  padding: 10px;
-  z-index: 1;
-  border-width: thick;
-  border-color: red;
-  /*background: black;*/
-}
-
 
 
 h3 {
-
-
 }

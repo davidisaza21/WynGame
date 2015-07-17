@@ -1,46 +1,32 @@
 <p id="notice"><%= notice %></p>
-
-<h1>Listing Products</h1>
-
+<div>
+    <h1 class="page_sub_heading">Listing Products</h1>
+</div>
 
     <% @products.each do |product| %>
-      <div class="center_column">
-          <div class="column1">
-            <p id="game_pic"><%= image_tag product.picture %></p>
-          </div>
+      <div class="game_block">
+        <div class="game group">
+            <div class ="game_container">
+              <div class="game_left">
+                <figure class="game_pic"><%= image_tag(product.picture, :size => '260x180')%></figure>
+              </div>
 
-          <div class="column2">
-            <p id="p_name"><%= product.name %></p>
-            <p id="p_description"><%= product.description %></p>
-          </div>
+              <div class="game_right">
+                <div class="game_info">
+                    <p><%= product.name %></p><p><%= link_to 'Show', product %></p>
+                    <p><%= product.description %></p>
 
-          <div class="column3">
-            <p id="p_price"><%= product.formatted_price %></p>
-            <p id="buy"><%= link_to 'Buy', product.gumroad_link %></p>
-          </div>
+                </div>
+                <div class="game_buttons">
+                    <p><%= product.formatted_price %></p>
+                    <p><%= link_to 'Buy', product.gumroad_link %></p>
+                    <p><%= link_to 'Edit', edit_product_path(product) %></p>
+                    <p><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+                </div>
+              </div>
+            </div>
+        </div>
       </div>
-            <p id="show"><%= link_to 'Show', product %></p>
-            <p id="edit"><%= link_to 'Edit', edit_product_path(product) %></p>
-            <p id="destroy"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
             
 
     <% end %>
-
-
-<br>
-
-<%= link_to 'New Product', new_product_path %>
-<div>
-<!-- 1.Batman -->
-<iframe width="320" height="180" src="https://www.youtube.com/embed/bLv8xko2teg" frameborder="0" allowfullscreen></iframe>
-<!--2. GoW:remastered  -->
-<iframe width="320" height="180" src="https://www.youtube.com/embed/EWghbLMynz0" frameborder="0" allowfullscreen></iframe>
-<!--3. RocketLeague  -->
-<iframe width="320" height="180" src="https://www.youtube.com/embed/NC82dWrFqCE" frameborder="0" allowfullscreen></iframe>
-<!--4. Splatoon  -->
-<iframe width="320" height="180" src="https://www.youtube.com/embed/8L54s2m1dPs" frameborder="0" allowfullscreen></iframe>
-<!--5. Planetside 2  -->
-<iframe width="320" height="180" src="https://www.youtube.com/embed/41QFL4QB3NE" frameborder="0" allowfullscreen></iframe>
-<!--6. LegoJW  -->
-<iframe width="320" height="180" src="https://www.youtube.com/embed/PaVbiSBdNDo" frameborder="0" allowfullscreen></iframe>
-</div>
