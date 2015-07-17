@@ -18,10 +18,11 @@
     border: 5px solid #DFDFDF;
     color: #717171;
     font-size: 14px;
-    height: 100px;
+    /*height: 125px;
+    width: 275px;*/
     letter-spacing: 1px;
     line-height: 30px;
-    position: relative;
+    position: absolute;
     text-align: left;
     /* text-transform: uppercase; */
     top: -80px;
