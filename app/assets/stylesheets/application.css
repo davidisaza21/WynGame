@@ -156,8 +156,9 @@ table {
     display:inline;
 }
 .game_info_name{
-    font-size: 2em;
+    font-size: 1.25em;
     margin-right:50px;
+    font-weight: 800;
 }
 .game_block .group{
     position: relative;
