@@ -7,6 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <!--make all caps.  Helvetica font weight is 100  letter spacing 2px. font-size: 40px; -->
+  <header>
+    <em>W</em>YNGAME
+  </header>
 <div id="user-widget">
   <% if current_user %>
       Welcome <strong><%= current_user.name %></strong>!
@@ -17,20 +21,7 @@
 </div>
 
 <%= yield %>
-<div>
-<!-- 1.Batman -->
-<iframe width="320" height="180" src="https://www.youtube.com/embed/bLv8xko2teg" frameborder="0" allowfullscreen></iframe>
-<!--2. GoW:remastered  -->
-<iframe width="320" height="180" src="https://www.youtube.com/embed/EWghbLMynz0" frameborder="0" allowfullscreen></iframe>
-<!--3. RocketLeague  -->
-<iframe width="320" height="180" src="https://www.youtube.com/embed/NC82dWrFqCE" frameborder="0" allowfullscreen></iframe>
-<!--4. Splatoon  -->
-<iframe width="320" height="180" src="https://www.youtube.com/embed/8L54s2m1dPs" frameborder="0" allowfullscreen></iframe>
-<!--5. Planetside 2  -->
-<iframe width="320" height="180" src="https://www.youtube.com/embed/41QFL4QB3NE" frameborder="0" allowfullscreen></iframe>
-<!--6. LegoJW  -->
-<iframe width="320" height="180" src="https://www.youtube.com/embed/PaVbiSBdNDo" frameborder="0" allowfullscreen></iframe>
-</div>
+
 
 </body>
 </html>
