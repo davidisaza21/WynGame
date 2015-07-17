@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
 root 'products#index'
 
+  get "/profile", to: 'users#profile'
+
   # get   '/login', :to => 'sessions#new', :as => :login
   # get '/auth/:provider/callback', :to => 'sessions#create'
   # get '/auth/failure', :to => 'sessions#failure'

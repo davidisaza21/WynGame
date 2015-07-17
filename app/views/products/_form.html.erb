@@ -1,3 +1,7 @@
+<div class="form">
+  <div class="top_game_name">
+  <p><%= @product.name %></p>
+  </div>
 <%= form_for(@product) do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">
@@ -16,7 +20,7 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :picture %><br>
+    <%= f.label :picture_link %><br>
     <%= f.text_field :picture %>
   </div>
   <div class="field">
@@ -39,3 +43,5 @@
     <%= f.submit %>
   </div>
 <% end %>
+  <%= link_to 'Back', products_path %>
+</div>

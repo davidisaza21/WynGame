@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
 .hoverspan {
     background:#F8F8F8;
     border: 5px solid #DFDFDF;
@@ -44,4 +45,161 @@
     -moz-transform:rotate(45deg);
     -webkit-transform:rotate(45deg);
     transform:rotate(-135deg);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*font: inherit;*/
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.group:before,.group:after {
+    content: "";
+    display: table
+}
+.group:after {
+    clear: both
+}
+
+
+.group {
+    zoom: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.game{
+    background: #CCCCCC;
+    margin-bottom: 20px;
+    padding: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+/*.game_block > .game{*/
+    /*opacity: 0.9;*/
+/*}*/
+.game_container{
+    display:block;
+}
+.game_buttons{
+    float: right;
+}
+.game_left{
+    display:inline;
+    margin-right: 40px;
+    width:250px;
+    float:left;
+}
+.game_right{
+    display:inline;
+    width:700px;
+    /*min-width:300px;*/
+    float:left;
+}
+.game_info{
+    /*float:left;*/
+}
+.game_block .group{
+    position: relative;
+    /*margin-right: auto;*/
+    /*margin-left:auto;*/
+    /*margin-top: 0px;*/
+    /*margin-bottom: 0px;*/
+}
+.user-widget{
+    position:fixed;
+    right: 20px;
+    top:8px;
+    width:200px;
+    background: #cccccc;
+    padding:10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    text-align:center;
+    border: solid black;
+    border-width: 1px;
+}
+.page_header{
+    text-align:center;
+    width:500px;
+    margin:0 auto;
+}
+.wyngame{
+    text-align:center;
+    font-size:5em;
+}
+.form{
+    text-align:center;
+    background:#cccccc;
+    width: 200px;
+    margin: auto;
+    padding:30px;
+    border-radius:15px
+}
+
+.page_sub_heading{
+    font-size: 2em;
+    text-align: center;
+    /*margin: 0px 0px 40px 0px;*/
+    padding-bottom: 10px;
+    border-bottom: solid black;
+}
+.top_game_name{
+    font-size:2em;
+    margin-bottom: 20px;
+}
+.welcome{
+    border-bottom: solid black;
+    border-bottom-width: 1px;
+    margin-bottom: 5px;
+
+}
+em{
+    color:deepskyblue;
+}
+.content{
+    padding-top: 30px;
+    background: url(GameRoom.png) no-repeat center fixed;
+    -webkit-background-size: 110%;
+    background-size: 110%;
+    min-height: 1000px;
 }
