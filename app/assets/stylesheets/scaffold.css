@@ -31,16 +31,24 @@ pre {
   font-size: 11px;
 }
 
-a { color: #ebe921; }
-a:visited { color: #eb4221; }
-a:hover { color: #fff; background-color:#000; }
+a {  color: deepskyblue;
+    text-decoration:none}
+a:visited {
+    color: deepskyblue; }
+a:hover { color: black;
+    background-color:#transparent;
+    text-decoration:none }
+
 
 div.field, div.actions {
   margin-bottom: 10px;
 }
 
 #notice {
-  color: green;
+  color: black;
+    position:absolute;
+    right:450px;
+    top: 30px;
 }
 
 .field_with_errors {

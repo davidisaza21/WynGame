@@ -106,13 +106,16 @@ table {
     margin: 0 auto;
 }
 .game{
-    background: white;
+    background: #CCCCCC;
     margin-bottom: 20px;
     padding: 20px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
 }
+/*.game_block > .game{*/
+    /*opacity: 0.9;*/
+/*}*/
 .game_container{
     display:block;
 }
@@ -143,15 +146,17 @@ table {
 }
 .user-widget{
     position:fixed;
-    right: 10px;
-    top:10px;
+    right: 20px;
+    top:8px;
     width:200px;
-    background:white;
+    background: #cccccc;
     padding:10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     text-align:center;
+    border: solid black;
+    border-width: 1px;
 }
 .page_header{
     text-align:center;
@@ -164,12 +169,17 @@ table {
 }
 .form{
     text-align:center;
+    background:#cccccc;
+    width: 200px;
+    margin: auto;
+    padding:30px;
+    border-radius:15px
 }
 
 .page_sub_heading{
     font-size: 2em;
     text-align: center;
-    margin: 0px 0px 40px 0px;
+    /*margin: 0px 0px 40px 0px;*/
     padding-bottom: 10px;
     border-bottom: solid black;
 }
@@ -182,4 +192,14 @@ table {
     border-bottom-width: 1px;
     margin-bottom: 5px;
 
+}
+em{
+    color:deepskyblue;
+}
+.content{
+    padding-top: 30px;
+    background: url(GameRoom.png) no-repeat center fixed;
+    -webkit-background-size: 110%;
+    background-size: 110%;
+    min-height: 1000px;
 }
