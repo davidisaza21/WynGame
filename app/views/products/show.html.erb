@@ -42,7 +42,7 @@
 <h3>New Review</h3>
 <%= render 'reviews/form' %>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Edit', edit_product_path(@product) if current_user%> <%= print '|' if current_user %>
 <%= link_to 'Back', products_path %>
 
 

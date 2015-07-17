@@ -1,6 +1,3 @@
-<p id="notice"><%= notice %></p>
-
-
 <h1> Game Reviews</h1>
 
 
@@ -19,8 +16,8 @@
         <td><%= review.comment %></td>
         <td><%= review.product %></td>
         <td><%= link_to 'Show', review %></td>
-        <td><%= link_to 'Edit', edit_review_path(review) %></td>
-        <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Edit', edit_review_path(review) if @current_user%></td>
+        <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } if @current_user%></td>
       </tr>
     <% end %>
   </tbody>

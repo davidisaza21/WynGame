@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rainforest</title>
+  <title>Wyngame</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -21,7 +21,7 @@
       <%= link_to image_tag("facebook.jpg", :alt => "facebook login"), "/auth/facebook", id: "sign_in" %>
   <% end %>
   <br>
-  <%= link_to 'New Game', new_product_path %>
+  <%= link_to 'New Game', new_product_path if current_user%>
 </div>
 
 <%= yield %>
