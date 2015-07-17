@@ -102,7 +102,7 @@ table {
 
 .group {
     zoom: 1;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
 }
 .game{
@@ -121,6 +121,9 @@ table {
 }
 .game_buttons{
     float: right;
+    text-align : center;
+    width: 200px;
+    display-inline:block;
 }
 .game_left{
     display:inline;
@@ -129,13 +132,32 @@ table {
     float:left;
 }
 .game_right{
-    display:inline;
-    width:700px;
+    display:inline-block;
+    width:500px;
     /*min-width:300px;*/
     float:left;
+
+    box-sizing: border-box;
+
 }
 .game_info{
     /*float:left;*/
+    width:300px;
+    display:inline-block;
+
+}
+.game_info_top{
+    border-bottom: solid black;
+    border-width: 1px;
+    margin-bottom:10px;
+    margin-top: 10px;
+}
+.game_info p{
+    display:inline;
+}
+.game_info_name{
+    font-size: 2em;
+    margin-right:50px;
 }
 .game_block .group{
     position: relative;
@@ -199,8 +221,26 @@ em{
 }
 .content{
     padding-top: 30px;
-    background: url(GameRoom.png) no-repeat center fixed;
+    background: url(http://i.imgur.com/7YpqL.png) no-repeat center fixed;
     -webkit-background-size: 110%;
     background-size: 110%;
     min-height: 1000px;
+}
+.buy_box{
+ margin-bottom: 15px;
+    margin-top: 30px;
+    /*border: solid black;*/
+    border-width: 1px;
+    height:70px;
+    padding:20px;
+}
+.admin_edit p{
+    display:inline;
+}
+.edit_button{
+    margin-right:10px;
+}
+.buy_button{
+    font-size:3em;
+    margin-top:20px;
 }
