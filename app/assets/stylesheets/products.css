@@ -6,22 +6,13 @@
   background: url(mario_day.jpg) no-repeat center fixed;
   text-align: center;
   background-size: ;
-  border: 5px;
+  /*border: 5px;*/
 }
-.game_info {
+.game_pic_show {
+  padding: 1em;
+}
+.game_info_show {
   background-color: #cccccc;
   margin-left: 20%;
   width: 60%;
-  box-shadow:1px 1px black;
-}
-
-#decription {
-  width: 280;
-  height: 125;
-  font: red;
-}
-
-
-
-h3 {
 }
