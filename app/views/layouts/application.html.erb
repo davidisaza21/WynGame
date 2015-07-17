@@ -11,14 +11,14 @@
   <% if current_user %>
       Welcome <strong><%= current_user.name %></strong>!
       <%= link_to "Sign out", signout_path, id: "sign_out" %>
+      <%= link_to "Edit profile", "/profile" %>
   <% else %>
       <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
   <% end %>
 </div>
 
-<%= yield %><br><br>
-<p>current user</p>
-<%= current_user.name %>
+<%= yield %>
+
 
 </body>
 </html>
