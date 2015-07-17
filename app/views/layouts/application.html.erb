@@ -16,7 +16,6 @@
   <% if current_user %>
       <div class="welcome">Welcome</div><strong><%= current_user.name %></strong>! <br>
       <%= link_to "Sign out", signout_path, id: "sign_out" %> <br>
-      <%= link_to "Edit profile", "/profile" %>
   <% else %>
       <%= link_to image_tag("facebook.jpg", :alt => "facebook login"), "/auth/facebook", id: "sign_in" %>
   <% end %>
