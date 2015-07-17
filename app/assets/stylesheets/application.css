@@ -245,3 +245,43 @@ em{
     font-size:3em;
     margin-top:20px;
 }
+.current_reviews{
+    margin-top:40px;
+    width: 530px;
+    margin:auto;
+}
+
+.current_reviews h2{
+    font-size:1.2em;
+    border-bottom: solid black;
+    border-width: 1px;
+    margin-bottom:15px;
+
+
+}
+
+.add_comment{
+    margin-top:30px;
+    border-bottom:solid black;
+    border-width:1px;
+}
+.comment_tag{
+    font-size:0.65em;
+}
+.user_review{
+    border-bottom: dashed black;
+    border-width: 1px;
+    margin-top:10px;
+    padding-bottom:10px;
+}
+
+.game_info_show h2{
+    margin-top:30px;
+    border-bottom: solid black;
+    border-width: 1px;
+    font-size:1.5em;
+}
+
+.comment_tag{
+    margin-top: 5px;
+}
