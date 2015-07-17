@@ -285,3 +285,8 @@ em{
 .comment_tag{
     margin-top: 5px;
 }
+
+.bottom_back{
+    padding-bottom: 40px;
+    display:inline-block;
+}

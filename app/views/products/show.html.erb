@@ -47,12 +47,14 @@
           </p>
       <% end %>
   </div>
-    <%= if !current_user.nil?  %>
+    <% if current_user  %>
   <h3 class="add_comment">New Review</h3>
   <%= render 'reviews/form' %>
 
   <%= link_to 'Edit', edit_product_path(@product) %> |
 <% end %>
-  <%= link_to 'Back', products_path %>
+  <div class="bottom_back">
+      <%= link_to 'Back', products_path %>
+  </div>
   </div>
 
