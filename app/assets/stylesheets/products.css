@@ -4,7 +4,7 @@
 */
 
 .entire_page {
-  background: url(mario_day.jpg) no-repeat center fixed;
+  background: url(http://lowfatgaming.files.wordpress.com/2013/05/super-mario-world-241125.jpg) no-repeat center fixed;
   text-align: center;
   padding: 15px;
 }
@@ -27,7 +27,7 @@
 
 .game_desc {
   width: 530px;
-  margin: 1em;
+  margin: auto;
   text-align: center;
-
+  padding-top: 15px;
 }
