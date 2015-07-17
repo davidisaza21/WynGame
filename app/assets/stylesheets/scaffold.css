@@ -1,6 +1,9 @@
+tr {
+    background: #CCCCCC
+}
 body {
-  color: white;
-  background: url(GameRoom.png) no-repeat center center fixed;
+  color: black;
+  background: #ccc;/*url(GameRoom.png) no-repeat center center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
