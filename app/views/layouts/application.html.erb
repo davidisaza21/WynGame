@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Wyngame</title>
+
+  <title>WYNGAME</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -17,7 +19,7 @@
       <div class="welcome">Welcome</div><strong><%= current_user.name %></strong>! <br>
       <%= link_to "Sign out", signout_path, id: "sign_out" %> <br>
   <% else %>
-      <%= link_to image_tag("facebook.jpg", :alt => "facebook login"), "/auth/facebook", id: "sign_in" %>
+      <%= link_to image_tag("facebook.jpg"), "/auth/facebook", id: "sign_in" %>
   <% end %>
   <br>
   <%= link_to 'New Game', new_product_path if current_user%>

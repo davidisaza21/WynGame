@@ -180,6 +180,7 @@ table {
     text-align:center;
     border: solid black;
     border-width: 1px;
+    z-index: 1;
 }
 .page_header{
     text-align:center;

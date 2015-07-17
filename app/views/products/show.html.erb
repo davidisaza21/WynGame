@@ -1,48 +1,50 @@
-<h1 class="page_sub_heading"><%= @product.name %></h1>
 
-<p>
-  <strong>pic</strong><br>
-  <%= image_tag @product.picture %>
-</p>
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+  <h1 class="page_sub_heading"><%= @product.name %></h1>
+  <div class="entire_page">
+  <div class="game_info_show">
+  <p class="GameImage">
+    
+    <figure class="game_pic_show"><%= image_tag(@product.picture, :size => '560x315')%></figure>
+  </p>
+  <p class="game_name">
+    <strong>Name:</strong>
+    <%= @product.name %>
+  </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+  <p class="game_desc">
+    <strong>Description:</strong>
+    <%= @product.description %>
+  </p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.formatted_price %>
-</p>
+  <p class="game_price">
+    <strong>Price:</strong>
+    <%= @product.formatted_price %>
+  </p>
 
-<p>
-  <strong>buy:</strong>
-  <%= link_to 'Buy', @product.gumroad_link %>
-</p>
+  <p class="game_buy">
+    <strong>Buy:</strong>
+    <%= link_to 'Buy', @product.gumroad_link %>
+  </p>
 
-<p>
-  <strong>Video:</strong>
-  <%= @product.video_link.html_safe %>
-</p>
+  <p class="game_promo">
+    <strong>Video:</strong><br>
+    <%= @product.video_link.html_safe %>
+  </p>
+  <h2>User Reviews</h2>
+  <% @product.reviews.each do |review| %>
+      <p>
+        <%= review.comment %>
+        <br>
+        Added on: <%= time_ago_in_words(review.created_at) %>
+        Added by: <%= review.user.name %>
+      </p>
+  <% end %>
 
-<h3>Reviews</h3>
-<% @product.reviews.each do |review| %>
-    <p>
-      <%= review.comment %>
-      <br>
-      Added on: <%= time_ago_in_words(review.created_at) %>
-      Added by: <%= review.user.name %>
-    </p>
-<% end %>
+  <h3>New Review</h3>
+  <%= render 'reviews/form' %>
 
-<h3>New Review</h3>
-<%= render 'reviews/form' %>
-
-<%= link_to 'Edit', edit_product_path(@product) if current_user%> <%= print '|' if current_user %>
-<%= link_to 'Back', products_path %>
+  <%= link_to 'Edit', edit_product_path(@product) %> |
+  <%= link_to 'Back', products_path %>
+  </div>
 
 
