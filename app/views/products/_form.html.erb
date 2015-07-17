@@ -1,4 +1,7 @@
 <div class="form">
+  <div class="top_game_name">
+  <p><%= @product.name %></p>
+  </div>
 <%= form_for(@product) do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">

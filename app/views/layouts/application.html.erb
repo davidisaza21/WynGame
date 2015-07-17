@@ -5,22 +5,23 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,500,700,900"/>
 </head>
 <body>
   <!--make all caps.  Helvetica font weight is 100  letter spacing 2px. font-size: 40px; -->
   <header class="wyngame">
-    <em>W</em>YNGAME
+    <<em>W</em> >YNGAME
   </header>
 <div class="user-widget">
   <% if current_user %>
-      Welcome   <strong><%= current_user.name %></strong>! <br>
+      <div class="welcome">Welcome</div><strong><%= current_user.name %></strong>! <br>
       <%= link_to "Sign out", signout_path, id: "sign_out" %> <br>
       <%= link_to "Edit profile", "/profile" %>
   <% else %>
       <%= link_to image_tag("facebook.jpg", :alt => "facebook login"), "/auth/facebook", id: "sign_in" %>
   <% end %>
   <br>
-  <%= link_to 'New Product', new_product_path %>
+  <%= link_to 'New Game', new_product_path %>
 </div>
 
 <%= yield %>
